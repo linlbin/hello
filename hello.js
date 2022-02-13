@@ -1,9 +1,18 @@
-﻿var http = require('http');
+﻿let currentTemp = 19.5;
+const message = 'The Current temperature is ${currentTemp}\u00b0c';
+console.log(message);
 
-http.createServer(function(req, res){
-	res.writeHead(200,{'Content-Type': 'text/plain;charset=UTF-8'});
+const targetTemp = null;
+
+currentTemp = undefined;
+
+if (currentTemp === targetTemp)
+		console.log('They are same'); 
+else
+		console.log('They are Not same');
+console.log(now);
+
 	
-	res.end('Hello ZWY, Fuck you草有');
-}).listen(8888);
+const now = new Date();
 
-console.log('Server running at http://127.0.0.1:8888');
+console.log(now);
